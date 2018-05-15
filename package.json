@@ -1,0 +1,23 @@
+{
+  "name": "sigsep-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "waveform-playlist": "^3.0.4"
+  },
+  "devDependencies": {
+    "@iktakahiro/markdown-it-katex": "^3.0.3",
+    "vuepress": "^0.8.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev content",
+    "build": "vuepress build content"
+  },
+  "author": "Fabian-Robert Stoter",
+  "license": "MIT"
+}

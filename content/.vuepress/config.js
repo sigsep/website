@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/website/",
   locales: {
     '/': {
       lang: 'en-US',

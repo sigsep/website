@@ -20,7 +20,9 @@ All files from the _musdb18_ dataset are encoded in the [Native Instruments stem
 
 For each file, the mixture correspond to the sum of all the signals.
 
-:warning: Since the mixture is separately encoded as AAC, there there is a difference between the sum of all sources and the mixture. This difference has _no impact_ on the bsseval evaluation performance.
+::: warning Note
+Since the mixture is separately encoded as AAC, there there is a small difference between the __sum of all sources__ and the __mixture__. This difference has _no impact_ on the bsseval evaluation performance.
+:::
 
 All signals are stereophonic and encoded at 44.1kHz.
 
@@ -37,18 +39,36 @@ Have a look at the [detailed list of all tracks](https://github.com/sigsep/sigse
 * [Download Full Dataset (4.4 Gb)](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg) (MD5: af06762477334799bfc5abf237648207)
 * [Sample Data (11 MB)](https://www.dropbox.com/s/aihhp0fkboefxy3/mus-sample.zip?dl=1)
 
-When the download is done, use the following tools to use the stems-encoded musdb in your scripts
+When the download is done, you can use the following tools to use the stems-encoded musdb in your scripts:
+
+## Tools
 
 ### Parsers
 
 * [musdb](https://github.com/sigsep/sigsep-mus-db): Python based dataset parser
 * [mus-io](https://github.com/sigsep/sigsep-mus-io): Docker scripts for decoding/encoding STEMS <=> wav (i.e. MATLAB users go there)
+* [musdb.jl](https://github.com/davidavdav/Musdb.jl): Julia based dataset parser
 
 ### Evaluation
 
 * [museval](https://github.com/sigsep/sigsep-mus-eval): BSSEval v4 Evaluation tools
 * [SiSEC 2018](https://github.com/sigsep/sigsep-mus-2018): Signal Separation Evaluation Challenge 2018
 
+### Further Tools
+
+* [cutlist-generator](https://github.com/sigsep/sigsep-mus-cutlist-generator): Scripts to generate 30s and 7s excerpt annotations from the full dataset based on the activity of all sources.
+* [preview-generator](https://github.com/sigsep/sigsep-mus-preview-generator): Scripts to cut and recode the dataset based on provided cutlists.
+
+### Oracle Methods
+
+* [oracle](https://github.com/sigsep/sigsep-mus-oracle): Python based oracle method implementation like Ideal Binary Mask, Softmasks, Multichannel Wienerfilter
+
+
+## SiSEC 2018 Evaluation Campaign
+
+* [SiSEC 2018](https://github.com/sigsep/sigsep-mus-2018): Submissions of raw scores
+* [SiSEC 2018 - Analysis](https://github.com/sigsep/sigsep-mus-2018-analysis): Analysis of 2018 Submissions
+* [Paper](https://arxiv.org/abs/1804.06267): Preprint of Paper including all results, to be published at International Conference on Latent Variable Analysis and Signal Separation.
 
 ### Acknowledgements
 

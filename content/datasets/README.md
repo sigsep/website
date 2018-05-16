@@ -10,8 +10,9 @@ extremely challenging to separate excerpts of only a few seconds.
 In the following years, new datasets were proposed that improved over
 the MASS dataset in many directions. They are summarized in the table below:
 
+
 | **Dataset** | **Year** | **Reference(s)** | **Tracks** | **Track duration (s)** | **Full/stereo?** |
-| :---------- | :------- | :---------- | :-------------- | :--------- | :--------------------- | :--------------- |
+| ----------  | -------- | ---------------- | ---------- | ---------------------- | ---------------- | 
 | [MASS](http://www.mtg.upf.edu/download/datasets/mass)  | 2008     | (Vinyes 2008)                                                       |  9          | \(16 $\pm$ 7\)           | :x: / :heavy_check_mark:         |
 | [MIR-1K](https://sites.google.com/site/unvoicedsoundseparation/mir-1k)  | 2010     | (Hsu and Jang 2010) | 1,000      | \(8 $\pm$ 8\)            | :x: / :x:          |
 | [QUASI](http://www.tsi.telecom-paristech.fr/aao/en/2012/03/12/quasi/)       | 2011     | (Liutkus, Badeau, and Richard 2011; E. Vincent, Araki, et al. 2012) | 5          | \(206 $\pm$ 21\)         | :heavy_check_mark: / :heavy_check_mark:        |

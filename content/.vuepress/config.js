@@ -31,7 +31,7 @@ module.exports = {
     repo: 'sigsep',
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     // if your docs are in a different repo from your main project:
-    docsRepo: 'sigsep/website',
+    docsRepo: 'sigsep/tmp_website',
     // if your docs are not at the root of the repo:
     docsDir: 'content',
     // if your docs are in a specific branch (defaults to 'master'):
@@ -45,8 +45,7 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'Datasets', link: '/datasets/' },
       { text: 'Software', link: '/software' },
-      { text: 'Methods', link: '/methods/' },
-      { text: 'References', link: '/references' },
+      { text: 'Literature', link: '/literature/' },
     ],
     sidebar: {
       '/datasets/': [

@@ -1,5 +1,7 @@
 #### joe made this: http://goel.io/joe
 
+content/.vuepress/dist/
+
 #####=== Node ===#####
 
 # Logs
@@ -58,4 +60,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-

@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/tmp_website/",
+  base: "/",
   locales: {
     '/': {
       lang: 'en-US',
@@ -28,10 +28,10 @@ module.exports = {
   themeConfig: {
     logo: '/logo.png',
     // Assumes GitHub. Can also be a full GitLab url.
-    repo: 'sigsep/tmp_website',
+    repo: 'sigsep/sigsep.github.io',
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     // if your docs are in a different repo from your main project:
-    docsRepo: 'sigsep/tmp_website',
+    docsRepo: 'sigsep/sigsep.github.io',
     // if your docs are not at the root of the repo:
     docsDir: 'content',
     // if your docs are in a specific branch (defaults to 'master'):

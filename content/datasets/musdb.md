@@ -36,7 +36,7 @@ Have a look at the [detailed list of all tracks](https://github.com/sigsep/sigse
 
 ### Download
 
-* [Download Full Dataset (4.4 Gb)](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg) (MD5: af06762477334799bfc5abf237648207)
+* [Download Full Dataset (4.4 Gb)](https://zenodo.org/record/1117372/accessrequest) (MD5: af06762477334799bfc5abf237648207)
 * [Sample Data (11 MB)](https://www.dropbox.com/s/aihhp0fkboefxy3/mus-sample.zip?dl=1)
 
 When the download is done, you can use the following tools to use the stems-encoded musdb in your scripts:

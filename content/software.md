@@ -31,8 +31,8 @@ Python library which provides implementations of common source separation algori
 | <https://github.com/wslihgt/separateLeadStereo>              | 2011 | GPL         | Python            |
 | <http://openblissart.github.io/openBliSSART>                 | 2011 | GPL         | C/C++             |
 | <https://github.com/posenhuang/singingvoiceseparationrpca>   | 2012 | Apache      | Matlab            |
-| <http://zafarrafii.com/repet.html>                           | 2013 | GPL          | Matlab            |
-| <http://www.mtg.upf.edu/node/2851?p=MASS%20-%20AudioScanner> | 2013 |  ?         | Matlab            |
+| <https://github.com/zafarrafii/REPET>                        | 2013 | GPL         | Matlab/Python     |
+| <http://www.mtg.upf.edu/node/2851?p=MASS%20-%20AudioScanner> | 2013 |  ?          | Matlab            |
 | <http://isse.sourceforge.net>                                | 2013 | GPL         | C/C++             |
 | <https://members.loria.fr/ALiutkus/kam>                      | 2014 | AGPL        | Matlab            |
 | <http://bass-db.gforge.inria.fr/fasst>                       | 2014 | QPL         | C++/Python/Matlab |

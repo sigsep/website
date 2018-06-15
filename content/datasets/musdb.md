@@ -68,7 +68,7 @@ When the download is done, you can use the following tools to use the stems-enco
 
 * [SiSEC 2018](https://github.com/sigsep/sigsep-mus-2018): Submissions of raw scores
 * [SiSEC 2018 - Analysis](https://github.com/sigsep/sigsep-mus-2018-analysis): Analysis of 2018 Submissions
-* [Paper](https://arxiv.org/abs/1804.06267): Preprint of Paper including all results, to be published at International Conference on Latent Variable Analysis and Signal Separation.
+* [Paper](https://arxiv.org/abs/1804.06267)<Badge text="preprint" type="warn"/>:  all results, to be published at International Conference on Latent Variable Analysis and Signal Separation.
 
 ### Acknowledgements
 

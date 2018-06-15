@@ -1,18 +1,7 @@
 <template>
   <div id='player'>
+    <h1></h1>
     <div v-bind:class="playliststyles" id="playlist"></div>
-  <v-layout>
-
-  <v-flex xs12>
-  </v-flex>
-  <v-flex xs2>
-    <v-btn dark color="green" v-on:click.native="playpause">
-      <v-icon v-if="!isPlaying">play_arrow</v-icon>
-      <v-icon v-else>pause</v-icon>
-    </v-btn>
-  </v-flex>
-</v-layout>
-
   </div>
 </template>
 
@@ -30,6 +19,14 @@ export default {
     }
   },
   mounted: function () {
+    this.tracks = [{
+        'src': "http://test.wav",
+        'name': "wurst",
+        'muted': false,
+        'customClass': 'play',
+        'soloed': true
+      }
+    ]
     this.player = new Player()
     this.isLoading = true
     this.player.playlist.getEventEmitter().on('audiosourcesloaded', this.audioLoaded)
@@ -38,16 +35,6 @@ export default {
   beforeDestroy: function () {
     this.stop()
     delete this.player
-  },
-  computed: {
-    tracksRendered: function () {
-      return this.tracks.length > 0
-    },
-    playliststyles: function () {
-      return {
-        'singletrack': this.tracks.length === 1
-      }
-    }
   },
   methods: {
     update_tracks: function (oldval, newval) {
@@ -76,26 +63,20 @@ export default {
       this.isLoading = false
       console.log(this.player.playlist.tracks.length)
     }
-  },
-  watch: {
-    tracks: {
-      handler: 'update_tracks',
-      deep: true
-    }
   }
 }
 </script>
 
 <style media="screen">
-#player {
+/* #player {
   padding-top: 20px;
   margin-top: 10px;
   z-index: -1000;
-  /* border-top: 1px solid lightgray; */
 }
 #player .columns.hide{
   display: none;
 }
+*/
 #playlist.hide{
   display: none;
 }

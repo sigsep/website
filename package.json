@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@iktakahiro/markdown-it-katex": "^3.0.3",
-    "vuepress": "^0.8.4"
+    "vuepress": "^0.10.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -90,7 +90,7 @@ If you use this dataset, please reference it accordingly:
 @misc{musdb18,
   author       = {Rafii, Zafar and
                   Liutkus, Antoine and
-                  Fabian-Robert Stöter and
+                  Fabian-Robert St{\"o}ter and
                   Mimilakis, Stylianos Ioannis and
                   Bittner, Rachel},
   title        = {The {MUSDB18} corpus for music separation},

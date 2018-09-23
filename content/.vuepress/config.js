@@ -45,7 +45,13 @@ module.exports = {
       { text: 'Home', link: '/' },
       { text: 'Datasets', link: '/datasets/' },
       { text: 'Software', link: '/software' },
-      { text: 'Literature', link: '/literature/' },
+      {
+        text: 'Learning Material',
+        items: [
+          { text: 'Tutorials', link: '/tutorials/' },
+          { text: 'Literature Overview', link: '/literature/' }
+        ]
+      },
     ],
     sidebar: {
       '/datasets/': [

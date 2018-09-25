@@ -2,8 +2,8 @@
 
 The MASS dataset formed the core content of the early Signal
 Separation Evaluation Campaigns (SiSEC) (Vincent, Araki, and Bofill
-2009), which evaluate the quality of various music separation methods SiSEC always had a strong focus on vocals
-and accompaniment separation. For a long time, vocals separation metho  ds
+2009), which evaluate the quality of various music separation methods. SiSEC always had a strong focus on vocals
+and accompaniment separation. For a long time, vocals separation methods
 were very demanding computationally and it was already considered
 extremely challenging to separate excerpts of only a few seconds.
 

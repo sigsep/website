@@ -152,8 +152,6 @@ that enables modifications of either the excitation or the envelope
 parts through the source-filter
 paradigm.
 
-<span id="fig:stylized_vocals_accompaniment" label="fig:stylized_vocals_accompaniment">\[fig:stylized\_vocals\_accompaniment\]</span>
-
 An advantage of the source-filter model approach is indeed that one can
 dissociate the pitched content of the signal, embodied by the position
 of its harmonics, from its TF envelope which describes where the energy
@@ -163,19 +161,14 @@ phoneme being uttered (mouth and vocal tract configuration),
 respectively. One key feature of vocals is they typically exhibit great
 variability in fundamental frequency over time. They can also exhibit
 larger *vibratos* (fundamental frequency modulations) and *tremolos*
-(amplitude modulations) in comparison to other instruments, as seen in
-the top spectrogram in
-Figure [\[fig:stylized\_vocals\_accompaniment\]](#fig:stylized_vocals_accompaniment).
-
+(amplitude modulations) in comparison to other instruments.
 A particularity of musical signals is that they typically consist of
 sequences of pitched notes. A sound gives the perception of having a
 pitch if the majority of the energy in the audio signal is at
 frequencies located at integer multiples of some fundamental frequency.
 These integer multiples are called *harmonics*. When the fundamental
 frequency changes, the frequencies of these harmonics also change,
-yielding the typical comb spectrograms of harmonic signals, as depicted
-in the top spectrogram in
-Figure [\[fig:stylized\_vocals\_accompaniment\]](#fig:stylized_vocals_accompaniment).
+yielding the typical comb spectrograms of harmonic signals.
 Another noteworthy feature of sung melodies over simple speech is that
 their fundamental frequencies are, in general, located at precise
 frequency values corresponding to the musical key of the song. These
@@ -237,9 +230,7 @@ work by assigning each TF bin to a given source in a similar way.
 As mentioned in Section [2.2](#ssec:audio_and_speech_models), one
 particularity of vocals is their production by the vibration of the
 vocal folds, further filtered by the vocal tract. As a consequence, sung
-melodies are *mostly* harmonic, as depicted in
-Figure [\[fig:stylized\_vocals\_accompaniment\]](#fig:stylized_vocals_accompaniment),
-and therefore have a fundamental frequency. If one can track the pitch
+melodies are *mostly* harmonic and therefore have a fundamental frequency. If one can track the pitch
 of the vocals, one can then estimate the energy at the harmonics of the
 fundamental frequency and reconstruct the voice. This is the basis of
 the oldest methods (as well as some more recent methods) we are aware of
@@ -598,9 +589,7 @@ The methods presented in the previous section first compute a
 decomposition of the mixture into many components that are sorted *a
 posteriori* as accompaniment or lead. As can be seen, this means they
 make a low-rank assumption for the accompaniment, but typically *also
-for the vocals*. However, as can for instance be seen on
-Figure [\[fig:stylized\_vocals\_accompaniment\]](#fig:stylized_vocals_accompaniment),
-the spectrogram for the vocals do exhibit much more freedom than
+for the vocals*. However the spectrogram for the vocals do exhibit much more freedom than
 accompaniment, and experience shows they are not adequately described by
 a small number of spectral bases. For this reason, another track of
 research depicted in Figure [\[fig:methods\_rpca\]](#fig:methods_rpca)

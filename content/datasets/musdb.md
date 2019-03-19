@@ -36,7 +36,9 @@ Have a look at the [detailed list of all tracks](https://github.com/sigsep/websi
 
 ### Download
 
-<Badge text="Notice" type="warn"/> The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.
+::: warning Note
+ The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.
+:::
 
 * [Download Full Dataset (4.4 Gb)](https://zenodo.org/record/1117372) (MD5: af06762477334799bfc5abf237648207)
 * [Sample Data (11 MB)](https://www.dropbox.com/s/aihhp0fkboefxy3/mus-sample.zip?dl=1)

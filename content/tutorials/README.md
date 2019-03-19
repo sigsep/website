@@ -15,8 +15,8 @@ This tutorial was presented at ISMIR 2018 by [Antoine Liutkus](https://www.lirmm
 
 * 1. Introduction to Music Separation [Google Colab](https://colab.research.google.com/drive/1Zo6iSPIi6SjOAL7wg8yzVWkS9mjLgjI-)
 * 2. Vanilla BiLSTM Source Separation Model [Google Colab](https://colab.research.google.com/drive/1kZC0nsFShgXT-cQLs-DfPNovO_iykFbK)
-* 3. Bonus I: Spectrogram Sampling with Pescador <Badge text="t.b.a" type="warn"/>
-* 4. Bonus II: Norbert <Badge text="t.b.a" type="warn"/>
+* 3. The art of Audio Track Sampling feat. Pescador [Google Colab](https://colab.research.google.com/drive/1KEyjzMYW1PRFWdLNFCFIcnNhm0ruTH72)
+* 4. Advanced Inference using Norbert <Badge text="t.b.a" type="warn"/>
 
 ### Open-Unmix
 

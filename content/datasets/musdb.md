@@ -1,7 +1,5 @@
 # MUSDB18
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg)](https://doi.org/10.5281/zenodo.1117372)
-
 <img src="./assets/musheader.png" alt="Drawing"/>
 
 The _musdb18_ is a dataset of 150 full lengths music tracks (~10h duration) of different styles along with their isolated _drums_, _bass_, _vocals_ and _others_ stems.
@@ -36,7 +34,7 @@ For each file, the mixture correspond to the sum of all the signals.
 Since the mixture is separately encoded as AAC, there there is a small difference between the __sum of all sources__ and the __mixture__. The result of the compression is a bandwidth, limited to 16 kHz. This difference has _no impact_ on the bsseval evaluation performance.
 :::
 
-## MUSDB18-HQ: Uncompressed WAV
+## Uncompressed WAV
 
 <img src="./assets/sd-hd.png" align="right" width="300px">
 
@@ -48,8 +46,11 @@ As an alternative, we also offer the uncompressed WAV files for models that aim 
  The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.
 :::
 
-* [Download MUSDB18 (4.4 Gb)](https://zenodo.org/record/1117372)
-* [Download MUSDB18-HQ (22.7 Gb)](https://zenodo.org/record/1117372)
+* [Download MUSDB18 (4.4 Gb)](https://zenodo.org/record/1117372) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg)](https://doi.org/10.5281/zenodo.1117372)
+
+* [Download MUSDB18-HQ (22.7 Gb)](https://zenodo.org/record/3338373) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3338373.svg)](https://doi.org/10.5281/zenodo.3338373)
+
 * [Sample Data (11 MB)](https://www.dropbox.com/s/aihhp0fkboefxy3/mus-sample.zip?dl=1)
 
 When the download is done, you can use the following tools to use the stems-encoded musdb in your scripts:

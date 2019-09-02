@@ -7,6 +7,7 @@ module.exports = {
       description: 'Open Resources for Audio Source Separation'
     }
   },
+  ga: 'UA-120462573-1',
   head: [
     [
       'link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css'}

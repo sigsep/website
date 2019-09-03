@@ -1,8 +1,8 @@
-# MUSDB18
+# MUSDB18s
 
 <img src="./assets/musheader.png" alt="Drawing"/>
 
-The _musdb18_ is a dataset of 150 full lengths music tracks (~10h duration) of different styles along with their isolated _drums_, _bass_, _vocals_ and _others_ stems.
+The _musdb18_ is a dataset of 150 full lengths music tracks (~10h duration) of different genres along with their isolated _drums_, _bass_, _vocals_ and _others_ stems.
 
 _musdb18_ contains two folders, a folder with a training set: "train", composed of 100 songs, and a folder with a test set: "test", composed of 50 songs. Supervised approaches should be trained on the training set and tested on both sets.
 
@@ -14,9 +14,13 @@ The data from _musdb18_ is composed of several different sources:
 * 2 tracks were kindly provided by Native Instruments originally part of [their stems pack](https://www.native-instruments.com/en/specials/stems-for-all/free-stems-tracks/).
 * 2 tracks are from the Canadian rock band The Easton Ellises as part of the [heise stems remix competition](https://www.heise.de/ct/artikel/c-t-Remix-Wettbewerb-The-Easton-Ellises-2542427.html#englisch), licensed under Creative Commons (BY-NC-SA 3.0).
 
-Have a look at the [detailed list of all tracks](https://github.com/sigsep/website/blob/master/content/datasets/assets/tracklist.csv).
+A and their respective license is provided [here](https://github.com/sigsep/website/blob/master/content/datasets/assets/tracklist.csv).
 
-## Compressed STEMS
+::: tip Note
+ The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.
+:::
+
+## `MUSDB18` Compressed STEMS
 
 <img src="./assets/stems.png" align="right" width="190px">
 
@@ -30,30 +34,27 @@ All files from the _musdb18_ dataset are encoded in the [Native Instruments stem
 
 For each file, the mixture correspond to the sum of all the signals.
 
-::: warning Note
+::: tip Note
 Since the mixture is separately encoded as AAC, there there is a small difference between the __sum of all sources__ and the __mixture__. The result of the compression is a bandwidth, limited to 16 kHz. This difference has _no impact_ on the bsseval evaluation performance.
 :::
 
-## Uncompressed WAV
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg)](https://doi.org/10.5281/zenodo.1117372)
 
-<img src="./assets/sd-hd.png" align="right" width="300px">
+* [Download MUSDB18 (4.4 Gb)](https://zenodo.org/record/1117372) 
 
-As an alternative, we also offer the uncompressed WAV files for models that aim to predict high bandwidth of up to 22 kHz. Note that if you want to compare to SiSEC 2018 participants, you should use the standard MUSDB18 dataset, instead.
+## `MUSDB18-HQ` Uncompressed WAV
 
-### Download
+<img src="./assets/sd-hd.png" width="800px">
+
+As an alternative, we also offer the uncompressed WAV files for models that aim to predict high bandwidth of up to 22 kHz. Other than that, `MUSDB18-HQ` is identical to `MUSDB18`.
 
 ::: warning Note
- The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.
+If you want to compare separation models to existing source separation literature or if want compare to SiSEC 2018 participants, you should use the standard `MUSDB18` dataset, instead.
 :::
 
-* [Download MUSDB18 (4.4 Gb)](https://zenodo.org/record/1117372) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1117372.svg)](https://doi.org/10.5281/zenodo.1117372)
-
 * [Download MUSDB18-HQ (22.7 Gb)](https://zenodo.org/record/3338373) 
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3338373.svg)](https://doi.org/10.5281/zenodo.3338373)
-
-* [Sample Data (11 MB)](https://www.dropbox.com/s/aihhp0fkboefxy3/mus-sample.zip?dl=1)
-
-When the download is done, you can use the following tools to use the stems-encoded musdb in your scripts:
 
 ## Tools
 

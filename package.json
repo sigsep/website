@@ -7,11 +7,12 @@
     "doc": "docs"
   },
   "dependencies": {
+    "vuepress-plugin-mathjax": "^1.2.8",
     "waveform-playlist": "^3.0.4"
   },
   "devDependencies": {
-    "@iktakahiro/markdown-it-katex": "^3.0.3",
-    "vuepress": "^0.14.11"
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "vuepress": "^1.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

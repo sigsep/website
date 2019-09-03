@@ -7,11 +7,17 @@ module.exports = {
       description: 'Open Resources for Audio Source Separation'
     }
   },
-  ga: 'UA-120462573-1',
-  head: [
+  plugins: [
+    ['@vuepress/google-analytics', { ga: 'UA-120462573-1' }],
     [
-      'link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css'}
+      'mathjax', {
+        macros: {
+          '*': '\\times',
+        },
+      }
     ],
+  ],
+  ad: [
     [
       'script', { type: 'text/javascript', src: 'https://cdn.rawgit.com/larsgw/citation.js/archive/citation.js/citation-0.3.4.min.js'}
     ]
@@ -21,10 +27,6 @@ module.exports = {
     anchor: { permalink: true },
     // options for markdown-it-toc
     toc: { includeLevel: [1, 2] },
-    config: md => {
-      // use more markdown-it plugins!
-      md.use(require('@iktakahiro/markdown-it-katex'))
-    }
   },
   themeConfig: {
     logo: '/logo.png',
@@ -45,7 +47,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Datasets', link: '/datasets/' },
-      { text: 'Software', link: '/software' },
+      { text: 'Open-Unmix', link: '/open-unmix/' },
       {
         text: 'Learning Material',
         items: [
@@ -63,6 +65,35 @@ module.exports = {
           children: [
             '/datasets/musdb',
             '/datasets/dsd100'
+          ],
+        }
+      ],
+      '/open-unmix/': [
+        {
+          // sidebar for pages under /foo/
+          collapsable: false,
+          children: [
+            '',
+            '/open-unmix/details',
+            '/open-unmix/results',
+            '/open-unmix/other',
+            '/open-unmix/other'
+          ],
+        },
+        {
+          // sidebar for pages under /foo/
+          title: 'museval',
+          collapsable: false,
+          children: [
+            '/open-unmix/details',
+          ],
+        },
+        {
+          // sidebar for pages under /foo/
+          title: 'norbert',
+          collapsable: false,
+          children: [
+            '/open-unmix/details',
           ],
         }
       ]

@@ -8,5 +8,5 @@ features:
   details: As a starting point for researchers we provide a list of open source implementations for various source separation methods.
 - title: Learning Material
   details: We provide a comprehensive tutorial to learn about how to make music separation work.
-footer: Licensed under Creative Commons | Copyright © 2018 SigSep
+footer: Licensed under Creative Commons | Copyright © 2019 SigSep
 ---

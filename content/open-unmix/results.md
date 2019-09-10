@@ -2,7 +2,7 @@
 
 ## Demo Tracks
 
-<iframe src="https://umx-sisec18.s3-website.eu-west-3.amazonaws.com/" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://d2cowzs755i94n.cloudfront.net" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Objective results on SiSEC 2018
 

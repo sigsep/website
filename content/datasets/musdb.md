@@ -1,4 +1,4 @@
-# MUSDB18s
+# MUSDB18
 
 <img src="./assets/musheader.png" alt="Drawing"/>
 

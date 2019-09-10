@@ -71,29 +71,22 @@ module.exports = {
       '/open-unmix/': [
         {
           // sidebar for pages under /foo/
+          title: "Open-Unmix",
           collapsable: false,
           children: [
-            '',
+            '/open-unmix/',
             '/open-unmix/details',
             '/open-unmix/results',
+            '/open-unmix/norbert',
+            '/open-unmix/museval',
+          ],
+        },
+        {
+          // sidebar for pages under /foo/
+          title: 'Other Tools',
+          collapsable: false,
+          children: [
             '/open-unmix/other',
-            '/open-unmix/other'
-          ],
-        },
-        {
-          // sidebar for pages under /foo/
-          title: 'museval',
-          collapsable: false,
-          children: [
-            '/open-unmix/details',
-          ],
-        },
-        {
-          // sidebar for pages under /foo/
-          title: 'norbert',
-          collapsable: false,
-          children: [
-            '/open-unmix/details',
           ],
         }
       ]

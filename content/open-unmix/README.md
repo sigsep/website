@@ -6,10 +6,10 @@
 
 __Open-Unmix__, is a deep neural network reference implementation for music source separation, applicable for researchers, audio engineers and artists. __Open-Unmix__ provides ready-to-use models that allow users to separate pop music into four stems: __vocals__, __drums__, __bass__ and the remaining __other__ instruments. 
 
-We favored simplicity over performance to promote clearness of the code. The rationale is to have __open-unmix__ serve as a __baseline__ for future research while performance still meets current state-of-the-art (See [Evaluation](#Evaluation)). The results are comparable/better to those of `UHL1`/`UHL2` which obtained the best performance over all systems trained on MUSDB18 in the [SiSEC 2018 Evaluation campaign](https://sisec18.unmix.app).
+Although __open-unmix__ reaches state of the art separation performance as of September, 2019 (See [Evaluation](#Evaluation)), the design choices for it favored simplicity over performance to promote clearness of the code and to have it serve as a __baseline__ for future research. The results are comparable/better to those of `UHL1`/`UHL2` which obtained the best performance over all systems trained on MUSDB18 in the [SiSEC 2018 Evaluation campaign](https://sisec18.unmix.app).
 We designed the code to allow researchers to reproduce existing results, quickly develop new architectures and add own user data for training and testing. We favored framework specifics implementations instead of having a monolithic repository with common code for all frameworks.
 
-The model is available for three different frameworks, however the pytorch implementation serves as the reference version that will include pre-trained on the [MUSDB18](https://sigsep.github.io/datasets/musdb.html) dataset.
+The model is available for three different frameworks. However, the pytorch implementation serves as the reference version that includes pre-trained networks trained on the [MUSDB18](https://sigsep.github.io/datasets/musdb.html) dataset.
 
 * [open-unmix for pytorch <Badge text="Reference" type="tip"/>](https://github.com/sigsep/open-unmix-pytorch)
 * [colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
@@ -53,7 +53,7 @@ Keeping in mind that the learning curve can be quite steep in audio
 processing, we did our best for *Open-unmix* to be:
 
 -   **simple to extend**: The pre/post-processing, data-loading,
-    training and models part of the code is isolated and easy to
+    training and models part of the code are isolated and easy to
     replace/update. In particular, a specific effort was done to make it
     easy to replace the model.
 -   **not a package**: The software is composed of largely independent
@@ -78,7 +78,7 @@ were also proposed in (McFee et al. 2018). In particular:
     user to use the model right away or fine-tune it on user-provided
     data (Stöter and Liutkus 2019a, 2019b).
 -   **tests**: the release includes unit and regression tests, useful to
-    organize future open collaboration using pull requests.
+    organize future open collaboration through pull requests.
 
 ## Using the PyTorch version
 
@@ -88,7 +88,7 @@ For installation we recommend to use the [Anaconda](https://anaconda.org/) pytho
 
 We provide two pre-trained models:
 
-* __`umxhq` (default)__  trained on [MUSDB18-HQ](https://sigsep.github.io/datasets/musdb.html#uncompressed-wav) which comprises the same tracks as in MUSDB18 but un-compressed which yield in a full bandwidth of 22050 Hz.
+* __`umxhq` (default)__  trained on [MUSDB18-HQ](https://sigsep.github.io/datasets/musdb.html#uncompressed-wav) which comprises the same tracks as in MUSDB18 but un-compressed. This allows outputting separated signals with a full bandwidth of 22050 Hz.
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370489.svg)](https://doi.org/10.5281/zenodo.3370489)
 
@@ -202,4 +202,4 @@ _open-unmix_ is a community focused project, we therefore encourage the communit
 
 ### License
 
-MI
+MIT

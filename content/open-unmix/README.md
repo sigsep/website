@@ -1,8 +1,10 @@
 # Introduction
 
-<iframe src="https://d2cowzs755i94n.cloudfront.net/" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) [![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d)
 
-[![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) 
+
+
+### Open-Unmix - A Reference Implementation for Music Source Separation
 
 __Open-Unmix__, is a deep neural network reference implementation for music source separation, applicable for researchers, audio engineers and artists. __Open-Unmix__ provides ready-to-use models that allow users to separate pop music into four stems: __vocals__, __drums__, __bass__ and the remaining __other__ instruments. 
 
@@ -18,6 +20,8 @@ The model is available for three different frameworks. However, the pytorch impl
 
 
 ## Paper 
+
+[![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d)
 
 Open-unmix is presented in a paper that has been published in the Journal of Open Source Software. 
 You may download the paper PDF [here](https://www.theoj.org/joss-papers/joss.01667/10.21105.joss.01667.pdf)
@@ -203,3 +207,8 @@ _open-unmix_ is a community focused project, we therefore encourage the communit
 ### License
 
 MIT
+
+### Copyright
+
+<p></p>
+<img src="./logo_INRIA.svg" width="250">

@@ -1,12 +1,11 @@
 # Introduction
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) [![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d)
-
+[![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) [![Gitter](https://badges.gitter.im/sigsep/open-unmix.svg)](https://gitter.im/sigsep/open-unmix?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) [![Google group : Open-Unmix](https://img.shields.io/badge/discuss-on%20google%20groups-orange.svg)](https://groups.google.com/forum/#!forum/open-unmix)
 
 
 ### Open-Unmix - A Reference Implementation for Music Source Separation
 
-__Open-Unmix__, is a deep neural network reference implementation for music source separation, applicable for researchers, audio engineers and artists. __Open-Unmix__ provides ready-to-use models that allow users to separate pop music into four stems: __vocals__, __drums__, __bass__ and the remaining __other__ instruments. 
+__Open-Unmix__, is a deep neural network reference implementation for music source separation, applicable for researchers, audio engineers and artists. __Open-Unmix__ provides ready-to-use models that allow users to separate pop music into four stems: __vocals__, __drums__, __bass__ and the remaining __other__ instruments.
 
 Although __open-unmix__ reaches state of the art separation performance as of September, 2019 (See [Evaluation](#Evaluation)), the design choices for it favored simplicity over performance to promote clearness of the code and to have it serve as a __baseline__ for future research. The results are comparable/better to those of `UHL1`/`UHL2` which obtained the best performance over all systems trained on MUSDB18 in the [SiSEC 2018 Evaluation campaign](https://sisec18.unmix.app).
 We designed the code to allow researchers to reproduce existing results, quickly develop new architectures and add own user data for training and testing. We favored framework specifics implementations instead of having a monolithic repository with common code for all frameworks.
@@ -17,7 +16,6 @@ The model is available for three different frameworks. However, the pytorch impl
 * [colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
 * [open-unmix for nnabla](https://github.com/sigsep/open-unmix-nnabla) 
 * [open-unmix for tensorflow <Badge text="to be released" type="warn"/>](https://github.com/sigsep/open-unmix-tensorflow) 
-
 
 ## Paper 
 
@@ -132,9 +130,11 @@ and then run the evaluation using
 python eval.py --outdir /path/to/musdb/estimates --evaldir /path/to/museval/results
 ```
 
-## How to contribute
+## Contribute / Support
 
-_open-unmix_ is a community focused project, we therefore encourage the community to submit bug-fixes and requests for technical support through [github issues](https://github.com/sigsep/open-unmix-pytorch/issues/new/choose). For more details of how to contribute, please follow our [`CONTRIBUTING.md`](https://github.com/sigsep/open-unmix-pytorch/blob/master/CONTRIBUTING.md). 
+_open-unmix_ is a community focused project, we therefore encourage the community to submit bug-fixes and requests for technical support through [github issues](https://github.com/sigsep/open-unmix-pytorch/issues/new/choose). For more details of how to contribute, please follow our [`CONTRIBUTING.md`](https://github.com/sigsep/open-unmix-pytorch/blob/master/CONTRIBUTING.md).
+
+For support and help, please use the [gitter chat](https://gitter.im/sigsep/open-unmix?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) or the [google groups](https://groups.google.com/forum/#!forum/open-unmix) forum.
 
 
 ## References

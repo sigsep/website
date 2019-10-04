@@ -216,6 +216,5 @@ MIT
 ### Funding
 
 This  work  was  partly  supported  by  the  research  programme  KAMoulox(ANR-15-CE38-0003-01)  funded  by  ANR,  the  French  State  agency  for  re-search
-<img src="./anr.jpg" width="200">
-
+<p></p>
 <img src="./anr.jpg" width="100">

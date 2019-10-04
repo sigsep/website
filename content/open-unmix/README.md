@@ -212,4 +212,4 @@ MIT
 
 <p></p>
 <img src="./logo_INRIA.svg" width="250">
-<img src="./anr.jpg" width="250">
+<img src="./anr.jpg" width="100">

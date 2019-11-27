@@ -15,7 +15,6 @@ The model is available for three different frameworks. However, the pytorch impl
 * [open-unmix for pytorch <Badge text="Reference" type="tip"/>](https://github.com/sigsep/open-unmix-pytorch)
 * [colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
 * [open-unmix for nnabla](https://github.com/sigsep/open-unmix-nnabla) 
-* [open-unmix for tensorflow <Badge text="to be released" type="warn"/>](https://github.com/sigsep/open-unmix-tensorflow) 
 
 ## Paper 
 
@@ -43,8 +42,7 @@ architectures.
 We choose *pytorch* to serve as a reference implementation due to its
 balance between simplicity and modularity.
 Furthermore, we already ported the core model to
-[NNabla](https://github.com/sigsep/open-unmix-nnabla) and plan to
-release a port for Tensorflow 2.0, once the framework is released. Note
+[NNabla](https://github.com/sigsep/open-unmix-nnabla). Note
 that the ports will not include pre-trained models as we cannot make
 sure the ports would yield identical results, thus leaving a single
 baseline model for researchers to compare with.

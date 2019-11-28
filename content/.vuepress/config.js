@@ -4,7 +4,7 @@ module.exports = {
     '/': {
       lang: 'en-US',
       title: 'SigSep',
-      description: 'Open Resources for Audio Source Separation'
+      description: 'Open Resources for Music Source Separation'
     }
   },
   plugins: [

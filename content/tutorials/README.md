@@ -2,9 +2,16 @@
 sidebar: auto
 ---
 
-# Tutorials
+# Tutorials and Overview Talks
+
+## AES Virtual Symposium 2020: Current Trends in Audio Source Separation
+__Presenters:__ [Fabian-Robert Stöter](https://www.faroit.com) and [Stefan Uhlich](https://uhlich.imfast.io)
+
+* [Slides (pdf)](/AES2020_CurrentTrendsInSourceSeparation.pdf)
+* [Video t.b.a]
 
 ## EUSIPCO 2019: Deep learning for music separation
+__Presenters:__ [Antoine Liutkus](https://www.lirmm.fr/users/utilisateurs-lirmm/antoine-liutkus) and [Fabian-Robert Stöter](https://www.faroit.com)
 
 * [Slides](https://sigsep.github.io/eusipco2019_tutorial)
 * [Notebook 1: Introduction to Music Unmixing](https://colab.research.google.com/drive/1Zo6iSPIi6SjOAL7wg8yzVWkS9mjLgjI-)
@@ -14,7 +21,7 @@ sidebar: auto
 In this tutorial, we present the recent state of the art on the topic of music separation, which is a cornerstone problem for many applications in the entertainment industry. The particularity of this tutorial will be to approach the topic from both, a theoretical perspective, as well as an interactive demonstration regarding how to implement the described ideas in practice. In a first introductory part, we will summarize mandatory signal processing concepts and will review the model-based methods that were proposed in the last 40 years. This notably includes sinusoidal modeling, nonnegative matrix factorization, or kernel methods. Then, we will overview the related datasets that were proposed, as well as the metrics used for evaluation. From a practical perspective, we will see how to browse and use data in Python. In the second part, we will present deep neural networks, and most particularly the models and methods that are adequate for time series with long-term structures as in music. This involves a quick crash course on DNN and dynamic models (LSTM, CNN and wavenet), and a recap of the related vocabulary: datasets, samples, epoch, batch, loss, gradient, generative, discriminative, adversarial, etc. In the third part, we will show the importance of design and will bring a basic LSTM separation model to state-of-the-art performance. We will analyze the impact of many design choices: input representation, dimensionality reduction, depth, hidden size, context length, skip connections. This tutorial is intended to be an introduction of this topic for Ph.D. students and engineers, explaining how to obtain state of the art performance in audio separation, along with the required technical background. Second, it will hopefully be of interest to researchers wondering how to do actual investigations on audio with DNNs, without being just users of high-level black-box systems.
 
 ## ISMIR 2018: _"Music Source Separation with DNNs, Making it work"_
-This tutorial was presented at ISMIR 2018 by [Antoine Liutkus](https://www.lirmm.fr/users/utilisateurs-lirmm/antoine-liutkus) and [Fabian-Robert Stöter](https://www.faroit.com)
+__Presenters:__ [Antoine Liutkus](https://www.lirmm.fr/users/utilisateurs-lirmm/antoine-liutkus) and [Fabian-Robert Stöter](https://www.faroit.com)
 
 * [Slides](https://sigsep.github.io/ismir2018_tutorial/index.html)
 

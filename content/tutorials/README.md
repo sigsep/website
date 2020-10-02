@@ -7,8 +7,10 @@ sidebar: auto
 ## AES Virtual Symposium 2020: Current Trends in Audio Source Separation
 __Presenters:__ [Fabian-Robert Stöter](https://www.faroit.com) and [Stefan Uhlich](https://uhlich.imfast.io)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AB-F2JmI9U4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 * [Slides (pdf)](/AES2020_CurrentTrendsInSourceSeparation.pdf)
-* [Video t.b.a]
+* [Video](https://www.youtube.com/watch?v=AB-F2JmI9U4)
 
 ## EUSIPCO 2019: Deep learning for music separation
 __Presenters:__ [Antoine Liutkus](https://www.lirmm.fr/users/utilisateurs-lirmm/antoine-liutkus) and [Fabian-Robert Stöter](https://www.faroit.com)

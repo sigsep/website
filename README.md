@@ -17,3 +17,4 @@ npm run build
 # deploy site
 sh deploy.sh
 ```
+-about installetion

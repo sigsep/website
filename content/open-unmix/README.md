@@ -12,9 +12,9 @@ We designed the code to allow researchers to reproduce existing results, quickly
 
 The model is available for three different frameworks. However, the pytorch implementation serves as the reference version that includes pre-trained networks trained on the [MUSDB18](https://sigsep.github.io/datasets/musdb.html) dataset.
 
-* [open-unmix for pytorch <Badge text="Reference" type="tip"/>](https://github.com/sigsep/open-unmix-pytorch)
+* [Pytorch code](https://github.com/sigsep/open-unmix-pytorch)
 * [colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
-* [open-unmix for nnabla](https://github.com/sigsep/open-unmix-nnabla) 
+* [NNabla](https://github.com/sigsep/open-unmix-nnabla) 
 
 ## Paper 
 
@@ -95,6 +95,10 @@ We provide two pre-trained models:
 * __`umx`__ is trained on the regular [MUSDB18](https://sigsep.github.io/datasets/musdb.html#compressed-stems) which is bandwidth limited to 16 kHz due to AAC compression. This model should be used for comparison with other (older) methods for evaluation in [SiSEC18](sisec18.unmix.app).
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370486.svg)](https://doi.org/10.5281/zenodo.3370486)
+
+* __`umxse`__ is, in contrast, a speech enhancement model which does a separation into `speech` and `noise`. It is trained on the 16kHz version of the [VoiceBank+DEMAND corpus](https://datashare.is.ed.ac.uk/handle/10283/1942) which is a common dataset for speech enhancement and, therefore, this model can be compared to other speech enhancement approaches.
+
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3786908.svg)](https://zenodo.org/record/3786908)
 
 To separate audio files (`wav`, `flac`, `ogg` - but not `mp3`) files just run:
 

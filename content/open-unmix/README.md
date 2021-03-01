@@ -56,9 +56,6 @@ processing, we did our best for *Open-unmix* to be:
     training and models part of the code are isolated and easy to
     replace/update. In particular, a specific effort was done to make it
     easy to replace the model.
--   **not a package**: The software is composed of largely independent
-    and self-containing parts, keeping it easy to use and easy to
-    change.
 -   **hackable (MNIST like)**: Due to our objective of making it easier
     for machine-learning experts to try out music separation, we did our
     best to stick to the philosophy of baseline implementations for this

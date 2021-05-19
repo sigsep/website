@@ -14,7 +14,7 @@ The data from _musdb18_ is composed of several different sources:
 * 2 tracks were kindly provided by Native Instruments originally part of [their stems pack](https://www.native-instruments.com/en/specials/stems-for-all/free-stems-tracks/).
 * 2 tracks are from the Canadian rock band The Easton Ellises as part of the [heise stems remix competition](https://www.heise.de/ct/artikel/c-t-Remix-Wettbewerb-The-Easton-Ellises-2542427.html#englisch), licensed under Creative Commons (BY-NC-SA 3.0).
 
-A and their respective license is provided [here](https://github.com/sigsep/website/blob/master/content/datasets/assets/tracklist.csv).
+A detailed list of all tracks and their respective license is provided [here](https://github.com/sigsep/website/blob/master/content/datasets/assets/tracklist.csv).
 
 ::: tip Note
  The dataset is hosted on Zenodo and requires that users request access, since the tracks can only be used for academic purposes. We __manually__ check this requests. Please _do not_ fill the form multiple times, it usually takes as less than a day to give you access.

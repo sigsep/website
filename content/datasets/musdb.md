@@ -56,6 +56,16 @@ If you want to compare separation models to existing source separation literatur
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3338373.svg)](https://doi.org/10.5281/zenodo.3338373)
 
+## Errata
+
+Throughout the years, we found a few errors in the dataset. At some point we are going to fix them and issue a new release:
+
+| Track                   | Position | Error                               |
+| ----------------------- | -------- | ----------------------------------- |
+| Leaf - Wicked           | 2:20     | Electric-Guitar is mixed into drums |
+
+Please open an issue or contribute to this repository to add more errors.
+
 ## Tools
 
 ### Parsers

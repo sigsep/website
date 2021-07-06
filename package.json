@@ -8,11 +8,11 @@
   },
   "dependencies": {
     "vuepress-plugin-mathjax": "^1.2.8",
-    "waveform-playlist": "^3.1.0"
+    "waveform-playlist": "^4.0.1"
   },
   "devDependencies": {
-    "@vuepress/plugin-google-analytics": "^1.2.0",
-    "vuepress": "^1.2.0"
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "vuepress": "^1.8.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,10 +1,10 @@
-# DEMO + Results
+# Evaluation Results
 
 ## Demo Tracks
 
 <iframe src="https://d2cowzs755i94n.cloudfront.net" width="100%" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## Objective results on SiSEC 2018
+## Results on SiSEC 2018
 
 Open-Unmix yields state-of-the-art results compared to participants from [SiSEC 2018](https://sisec18.unmix.app/#/methods). The performance of `UMXHQ` and `UMX` is almost identical since it was evaluated on compressed STEMS.
 It can be seen that our proposed model reaches state-of-the-art results. There is no

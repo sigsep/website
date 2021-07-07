@@ -78,6 +78,7 @@ module.exports = {
             '/open-unmix/details',
             '/open-unmix/results',
             '/open-unmix/js',
+            '/open-unmix/share',
             '/open-unmix/norbert',
             '/open-unmix/museval',
           ],

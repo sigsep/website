@@ -12,15 +12,20 @@ We designed the code to allow researchers to reproduce existing results, quickly
 
 The model is available for three different frameworks. However, the pytorch implementation serves as the reference version that includes pre-trained networks trained on the [MUSDB18](https://sigsep.github.io/datasets/musdb.html) dataset.
 
-* [Pytorch code](https://github.com/sigsep/open-unmix-pytorch)
-* [colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
-* [NNabla](https://github.com/sigsep/open-unmix-nnabla) 
+* [Code Repository](https://github.com/sigsep/open-unmix-pytorch)
+* [Colab notebook](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ)
 
-<iframe width="740" height="260" src="https://share.unmix.app/H9hXpX5oma0XBlCBKEkK" frameborder="0"></iframe>
+
+## ⭐️ News 
+
+- 03/07/2021: We added `umxl`, a model that was trained on extra data which significantly improves the performance, especially generalization.
+- 14/02/2021: We released the new version of open-unmix as a python package. This comes with: a fully differentiable version of [norbert](https://github.com/sigsep/norbert), improved audio loading pipeline and large number of bug fixes. See [release notes](https://github.com/sigsep/open-unmix-pytorch/releases/) for further info.
+
+- 06/05/2020: We added a pre-trained speech enhancement model `umxse` provided by Sony.
+
+- 13/03/2020: Open-unmix was awarded 2nd place in the [PyTorch Global Summer Hackathon 2020](https://devpost.com/software/open-unmix).
 
 ## Paper 
-
-[![status](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d/status.svg)](https://joss.theoj.org/papers/571753bc54c5d6dd36382c3d801de41d)
 
 Open-unmix is presented in a paper that has been published in the Journal of Open Source Software. 
 You may download the paper PDF [here](https://www.theoj.org/joss-papers/joss.01667/10.21105.joss.01667.pdf)
@@ -79,56 +84,100 @@ were also proposed in (McFee et al. 2018). In particular:
 -   **tests**: the release includes unit and regression tests, useful to
     organize future open collaboration through pull requests.
 
-## Using the PyTorch version
+## 🏁 Getting started
 
-For installation we recommend to use the [Anaconda](https://anaconda.org/) python distribution. To create a conda environment for _open-unmix_, simply run:
+### Installation
 
-`conda env create -f environment-X.yml` where `X` is either [`cpu-linux`, `gpu-linux-cuda10`, `cpu-osx`], depending on your system. For now, we haven't tested windows support.
+`openunmix` can be installed from pypi using:
 
-We provide two pre-trained models:
+```
+pip install openunmix
+```
 
-* __`umxhq` (default)__  trained on [MUSDB18-HQ](https://sigsep.github.io/datasets/musdb.html#uncompressed-wav) which comprises the same tracks as in MUSDB18 but un-compressed. This allows outputting separated signals with a full bandwidth of 22050 Hz.
+Note, that the pypi version of openunmix uses [torchaudio] to load and save audio files. To increase the number of supported input and output file formats (such as STEMS export), please additionally install [stempeg](https://github.com/faroit/stempeg).
+
+Training is not part of the open-unmix package, please follow [docs/train.md] for more information.
+
+#### Using Docker
+
+We also provide a docker container. Performing separation of a local track in `~/Music/track1.wav` can be performed in a single line:
+
+```
+docker run -v ~/Music/:/data -it faroit/open-unmix-pytorch umx "/data/track1.wav" --outdir /data/track1
+```
+
+### Pre-trained models
+
+We provide three core pre-trained music separation models. All three models are end-to-end models that take waveform inputs and output the separated waveforms.
+
+* __`umxl`__  trained on private stems dataset of compressed stems. __Note, that the weights are only licensed for non-commercial use (CC BY-NC-SA 4.0).__
+
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5069601.svg)](https://doi.org/10.5281/zenodo.5069601)
+
+* __`umxhq` (default)__  trained on [MUSDB18-HQ](https://sigsep.github.io/datasets/musdb.html#uncompressed-wav) which comprises the same tracks as in MUSDB18 but un-compressed which yield in a full bandwidth of 22050 Hz.
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370489.svg)](https://doi.org/10.5281/zenodo.3370489)
 
-* __`umx`__ is trained on the regular [MUSDB18](https://sigsep.github.io/datasets/musdb.html#compressed-stems) which is bandwidth limited to 16 kHz due to AAC compression. This model should be used for comparison with other (older) methods for evaluation in [SiSEC18](sisec18.unmix.app).
+* __`umx`__ is trained on the regular [MUSDB18](https://sigsep.github.io/datasets/musdb.html#compressed-stems) which is bandwidth limited to 16 kHz do to AAC compression. This model should be used for comparison with other (older) methods for evaluation in [SiSEC18](sisec18.unmix.app).
 
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3370486.svg)](https://doi.org/10.5281/zenodo.3370486)
 
-* __`umxse`__ is, in contrast, a speech enhancement model which does a separation into `speech` and `noise`. It is trained on the 16kHz version of the [VoiceBank+DEMAND corpus](https://datashare.is.ed.ac.uk/handle/10283/1942) which is a common dataset for speech enhancement and, therefore, this model can be compared to other speech enhancement approaches.
+Furthermore, we provide a model for speech enhancement trained by [Sony Corporation](link)
 
-  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3786908.svg)](https://zenodo.org/record/3786908)
+* __`umxse`__ speech enhancement model is trained on the 28-speaker version of the [Voicebank+DEMAND corpus](https://datashare.is.ed.ac.uk/handle/10283/1942?show=full).
+
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3786908.svg)](https://doi.org/10.5281/zenodo.3786908)
+
+All four models are also available as spectrogram (core) models, which take magnitude spectrogram inputs and ouput separated spectrograms.
+These models can be loaded using `umxl_spec`, `umxhq_spec`, `umx_spec` and `umxse_spec`.
 
 To separate audio files (`wav`, `flac`, `ogg` - but not `mp3`) files just run:
 
 ```bash
-python test.py input_file.wav --model umxhq
+umx input_file.wav --model umxl
 ```
 
-A more detailed list of the parameters used for the separation is given in the [inference.md](https://github.com/sigsep/open-unmix-pytorch/blob/master/docs/inference.md) document.
-We provide a [jupyter notebook on google colab](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) to 
-experiment with open-unmix and to separate files online without any installation setup.
+A more detailed list of the parameters used for the separation is given in the [inference.md](/docs/inference.md) document.
 
-### Torch.hub
+We provide a [jupyter notebook on google colab](https://colab.research.google.com/drive/1mijF0zGWxN-KaxTnd0q6hayAlrID5fEQ) to experiment with open-unmix and to separate files online without any installation setup.
 
-The pre-trained models can be loaded from other pytorch based repositories using torch.hub.load:
+### Using pre-trained models from within python
+
+We implementes several ways to load pre-trained models and use them from within your python projects:
+
+#### When the package is installed
+
+Loading a pre-trained models is as simple as loading
 
 ```python
-torch.hub.load('sigsep/open-unmix-pytorch', 'umxhq', target='vocals')
+separator = openunmix.umxhq(...)
+```
+#### torch.hub
+
+We also provide a torch.hub compatible modules that can be loaded. Note that this does _not_ even require to install the open-unmix packagen and should generally work when the pytorch version is the same.
+
+```python
+separator = torch.hub.load('sigsep/open-unmix-pytorch', 'umxhq', device=device)
 ```
 
-### Evaluation using `museval`
+Where, `umxhq` specifies the pre-trained model. 
 
-To perform evaluation in comparison to other SISEC systems, you would need to install the `museval` package using
+#### Performing separation
 
+With a created separator object, one can perform separation of some `audio` (torch.Tensor of shape `(channels, length)`, provided as at a sampling rate `separator.sample_rate`) through:
+
+```python
+estimates = separator(audio, ...)
+# returns estimates as tensor
 ```
-pip install museval
-```
 
-and then run the evaluation using
+Note that this requires the audio to be in the right shape and sampling rate. For convenience we provide a pre-processing in `openunmix.utils.preprocess(..`)` that takes numpy audio and converts it to be used for open-unmix.
 
-```
-python eval.py --outdir /path/to/musdb/estimates --evaldir /path/to/museval/results
+To perform model loading, preprocessing and separation in one step, just use:
+
+```python
+from openunmix import separate
+estimates = separate.predict(audio, ...)
 ```
 
 ## Contribute / Support

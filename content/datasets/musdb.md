@@ -60,11 +60,17 @@ If you want to compare separation models to existing source separation literatur
 
 Throughout the years, we found a few errors in the dataset. At some point we are going to fix them and issue a new release:
 
-| Track                   | Position | Error                               |
-| ----------------------- | -------- | ----------------------------------- |
-| Leaf - Wicked           | 2:20     | Electric-Guitar is mixed into drums |
+| Track                             | Position       | Error                                                           |
+| --------------------------------- | ---------------| ----------------------------------------------------------------|
+| Chris Durban - Celebrate          |                | bleeding of other instruments into vocals                       | 
+| Detsky Sad - Walkie Talkie        |                | other mixed into drums                                          |
+| Enda Reilly - Cur An Long Ag Seol |                | speaking at the start of other track                            |
+| Hop Along - Sister Cities         |                | bleeding of other instruments into vocals                       |
+| Leaf - Wicked                     | 2:20, 3:02     | electric-Guitar is mixed into drums                             |
+| PR - Oh No                        |                | sum of sources does not add up to the mix for the left channel  |
 
-Please open an issue or contribute to this repository to add more errors.
+
+Please open an issue in this repository if you find more errors.
 
 ## Tools
 

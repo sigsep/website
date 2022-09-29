@@ -62,6 +62,7 @@ Throughout the years, we found a few errors in the dataset. At some point we are
 
 | Track                             | Position       | Error                                                           |
 | --------------------------------- | ---------------| ----------------------------------------------------------------|
+| Al James - Schoolboy Facination   |                | synth vocals mixed into other                                   |
 | Chris Durban - Celebrate          |                | bleeding of other instruments into vocals                       | 
 | Detsky Sad - Walkie Talkie        |                | other mixed into drums                                          |
 | Enda Reilly - Cur An Long Ag Seol |                | speaking at the start of other track                            |

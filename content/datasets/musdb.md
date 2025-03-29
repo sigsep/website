@@ -69,6 +69,7 @@ Throughout the years, we found a few errors in the dataset. At some point we are
 | Hop Along - Sister Cities         |                | bleeding of other instruments into vocals                       |
 | Leaf - Wicked                     | 2:20, 3:02     | electric-Guitar is mixed into drums                             |
 | PR - Oh No                        |                | sum of sources does not add up to the mix for the left channel  |
+| Side Effects Project - Sing With Me |              | spoken words in other track                                     |
 
 
 Please open an issue in this repository if you find more errors.
